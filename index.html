@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <link rel="stylesheet" href="indexstyles.css">
+</head>
+<body>
+
+    <h1 id="welcome">Welcome to my Point of Sale System</h1>
+
+    <div id="mainOptions" class="container">
+        <button onclick="showOptions('loginOptions')">Log in</button>
+        <button onclick="showOptions('signupOptions')">Sign up</button>
+    </div>
+
+    <div id="loginOptions" class="hidden">
+        <h3>Log in as?</h3>
+        <button onclick="login('admin')">Admin</button>
+        <button onclick="login('cashier')">Cashier</button>
+        <a class="back-link" onclick="goBack()"><< Back to Sign Up <<</a>
+    </div>
+
+    <div id="signupOptions" class="hidden">
+        <h3>Sign up as?</h3>
+        <button onclick="signup('admin')">Admin</button>
+        <button onclick="signup('cashier')">Cashier</button>
+        <a class="back-link" onclick="goBack()"><< Back to Log In <<</a>
+    </div>
+
+    <script src="scriptindex.js"></script>
+
+</body>
+</html>
